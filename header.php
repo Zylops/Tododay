@@ -1,5 +1,7 @@
 <!-- Styling -->
 
+<link rel="icon" href="src/tododay.svg">
+
 <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
 
 <style>
