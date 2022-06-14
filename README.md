@@ -4,8 +4,7 @@ A todo app where you can register an account and create todos/delete them. I've 
 ![Screenshot from the App](https://imgur.com/C4xGZCy.png)
 
 # Host this on your end:
-I used [XAMPP](https://www.apachefriends.org/index.html), so youll need to install that.
-Copy the repo to a directory inside htdocs (usually C://XAMPP/htdocs), and setup the database (named tododb) as follows using phpmyadmin (usually on localhost/phpmyadmin):
+I used [XAMPP](https://www.apachefriends.org/index.html), so youll need to install that. `git clone` the repo to a directory inside htdocs (usually located in C://XAMPP/htdocs), and setup the database (name it tododb or change its name in `config/connectDatabase.php`) as follows using phpmyadmin (usually on localhost/phpmyadmin):
 
 ### users table:
 
