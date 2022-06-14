@@ -11,11 +11,21 @@
 
                 $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
 
-                if (mysqli_query($conn, $sql)) {
-                    $_SESSION['username'] = $username;
-                    header('Location: index.php');
+
+                // Checks if the user is already registered
+                $alreadyThereSQL = "SELECT * FROM users WHERE username = '${username}' OR email = '${email}'";
+                $alreadyThereResult = mysqli_query($conn, $alreadyThereSQL);
+                $alreadyThereUser = mysqli_fetch_assoc($alreadyThereResult);\
+
+                if (empty($alreadyThereUser)) {
+                    if (mysqli_query($conn, $sql)) {
+                        $_SESSION['username'] = $username;
+                        header('Location: index.php');
+                    } else {
+                        $err = 'An SQL error occurred.';
+                    }
                 } else {
-                    $err = 'An SQL error occurred.';
+                    $err = "This username/email is already in use.";
                 }
             } else {
                 $err = 'Please fill all the fields.';
