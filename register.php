@@ -15,7 +15,7 @@
                 // Checks if the user is already registered
                 $alreadyThereSQL = "SELECT * FROM users WHERE username = '${username}' OR email = '${email}'";
                 $alreadyThereResult = mysqli_query($conn, $alreadyThereSQL);
-                $alreadyThereUser = mysqli_fetch_assoc($alreadyThereResult);\
+                $alreadyThereUser = mysqli_fetch_assoc($alreadyThereResult);
 
                 if (empty($alreadyThereUser)) {
                     if (mysqli_query($conn, $sql)) {

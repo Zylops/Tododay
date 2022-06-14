@@ -1,6 +1,10 @@
 <?php include('header.php'); ?>
 
 <?php
+    if (!$_SESSION) {
+        header('Location: index.php');
+    }
+
     $username = $_SESSION['username'];
     $userSQL = "SELECT * FROM users WHERE username = '$username'";
     $userResult = mysqli_query($conn, $userSQL);
