@@ -7,13 +7,13 @@ A todo app where you can register an account and create todos/delete them. I've 
 I used [XAMPP](https://www.apachefriends.org/index.html), so youll need to install that.
 Copy the repo to a directory inside htdocs (usually C://XAMPP/htdocs), and setup the database (named tododb) as follows using phpmyadmin (usually on localhost/phpmyadmin):
 
-### Users table:
+### users table:
 
 | id | username | email         | password       |
 |:--:|----------|---------------|----------------|
 | 1  | test     | test@test.com | hashedpassword |
 
-### Todos table:
+### todos table:
 | id | todo            | userid |
 |:--:|-----------------|--------|
 | 1  | This is a todo! | 1      |
