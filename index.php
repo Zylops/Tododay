@@ -5,6 +5,8 @@
         }
     ?>
 
+<title>Tododay</title>
+
 <div class="flex justify-center md:justify-between p-4 md:p-3 bg-white opacity-50">
         <div class="hidden md:block">
         <h1 class="text-xl font-bold text-center ">Hello, <span class="text-gray-500">guest</span>.</h1>

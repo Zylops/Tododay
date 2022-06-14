@@ -21,6 +21,8 @@
     }
 ?>
 
+<title>Todos - Tododay</title>
+
 <div class="flex justify-center m-4">
     <div class="shadow-md rounded-md p-4 w-96 m-2 inline-block">
         <div class="flex justify-between align-items-center">

@@ -23,6 +23,8 @@
         }
     ?>
 
+    <title>Login - Tododay</title>
+
     <div class="flex justify-center">
         <div class="rounded-md shadow-md p-4 m-4 inline">
             <h1 class="font-bold text-xl text-blue-600">Login</h1>
